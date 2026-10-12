@@ -83,7 +83,7 @@ def table(d, header, rows, caption, widths=None, size=10, left=False):
     if widths:
         for row in t.rows:
             for j, w in enumerate(widths): row.cells[j].width = Inches(w)
-    sp = d.add_paragraph(); sp.paragraph_format.line_spacing = 1.0; sp.paragraph_format.space_after = Pt(2)
+    sp = d.add_paragraph(); sp.paragraph_format.line_spacing = Pt(6); sp.paragraph_format.space_after = Pt(0)
     return t
 
 def figure(d, path, caption, width=5.6):
